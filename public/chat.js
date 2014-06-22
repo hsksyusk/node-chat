@@ -13,7 +13,8 @@ $(function(){
 
   socket.on('post', function(data){
     $posts.prepend(
-      '<li>' + data.id + ' : ' + data.post + '</li>'
+      //'<li>' + data + '</li>'
+      '<li>' + data.id + ' : ' + data.message + '</li>'
     );
   });
 
